@@ -1,0 +1,67 @@
+# 🖼️ Image Resizer - Auto 1:1 Converter
+
+**🔗 Live Site:** [https://image-resizer-plum.vercel.app/](https://image-resizer-plum.vercel.app/)
+
+A simple web tool to convert any image into a **1:1 aspect ratio** without cropping. Just drop an image, and the tool automatically resizes and pads it with a transparent or white background to make it square — perfect for profile pictures, social media, marketplaces, and more.
+
+## 🚀 Features
+
+- 📁 Drag and drop image upload
+- 🔍 Preview original and resized images side by side
+- 🔄 Automatically converts to a 1:1 aspect ratio
+- 💾 Download the resized image
+- 🔄 Reset and upload a new image
+- ⚡ Fully client-side (no server or image upload required)
+- 📱 Mobile-responsive and PWA-ready
+
+---
+
+## 📸 Screenshots
+
+### 🖼️ Upload Interface
+
+![Screenshot of upload interface](images/screenshot.png)
+
+### 🧩 Resizing & Preview Section
+
+![Screenshot showing before and after resizing](images/screenshot1.png)
+
+---
+
+## 🧑‍💻 How to Use
+
+1. Open the web app: [https://image-resizer-plum.vercel.app/](https://image-resizer-plum.vercel.app/)
+2. Drag and drop an image or click to browse your files.
+3. Wait for the image to process — you’ll see the original and 1:1 resized previews.
+4. Click the 💾 **Download** button to save your resized image.
+5. Click 🔄 **Reset** to start over.
+
+---
+
+## 🛠️ Technologies Used
+
+- HTML5
+- CSS3
+- JavaScript (Vanilla)
+- `<canvas>` API for image manipulation
+
+---
+
+## 📱 PWA Features
+
+- Mobile-web app capable
+- Apple and Android icons for home screen
+- Optimized viewport for mobile experience
+
+---
+
+## 👨‍💻 Developer
+
+Developed with ❤️ by **Michael Entera**  
+© 2025 All rights reserved.
+
+---
+
+## 📃 License
+
+This project is licensed under the [MIT License](LICENSE).
