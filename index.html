@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <title>Image Resizer - Auto 1:1 Converter</title>
+    
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="shortcut icon" href="favicon/favicon.ico">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🖼️ Image Resizer</h1>
+            <p>Convert any image to 1:1 aspect ratio without cropping</p>
+        </header>
+
+        <div class="upload-section">
+            <div class="upload-area" id="uploadArea">
+                <div class="upload-content">
+                    <div class="upload-icon">📁</div>
+                    <h3>Drop your image here</h3>
+                    <p>or click to browse</p>
+                    <input type="file" id="fileInput" accept="image/*" hidden>
+                </div>
+            </div>
+        </div>
+
+        <div class="preview-section" id="previewSection" style="display: none;">
+            <div class="image-container">
+                <div class="original-image">
+                    <h3>Original Image</h3>
+                    <canvas id="originalCanvas"></canvas>
+                    <div class="image-info" id="originalInfo"></div>
+                </div>
+                
+                <div class="resized-image">
+                    <h3>1:1 Resized Image</h3>
+                    <canvas id="resizedCanvas"></canvas>
+                    <div class="image-info" id="resizedInfo"></div>
+                </div>
+            </div>
+
+            <div class="controls">
+                <button id="downloadBtn" class="download-btn">💾 Download Resized Image</button>
+                <button id="resetBtn" class="reset-btn">🔄 Reset</button>
+            </div>
+        </div>
+
+        <div class="loading" id="loading" style="display: none;">
+            <div class="spinner"></div>
+            <p>Processing image...</p>
+        </div>
+
+        <footer class="footer">
+            <p>Developed with ❤️ by <strong>Michael Entera</strong></p>
+            <p>&copy; 2025 All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
